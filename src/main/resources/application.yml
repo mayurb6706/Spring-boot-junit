@@ -1,0 +1,23 @@
+
+server:
+  port: 8080
+
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: update
+  show-sql: true
+
+spring.datasource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: postgres
+  password: pgAdmin
+  
+spring:
+  application:
+    name: Employee-Service
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true    
