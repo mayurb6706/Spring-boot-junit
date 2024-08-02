@@ -84,7 +84,7 @@ class EmployeeControllerTest {
 		ResultActions response= this.mockMvc.perform(get(BASE_URL));
 		//Then
 		response.andDo(print()).andExpect(status().isOk()).andExpect(jsonPath("$[0].firstName").value("Mayur"))
-		.andExpect(jsonPath("$[1].designation").value("Devops Engineer"));
+		.andExpect(jsonPath("$[0].designation").value("Software Developer"));
 	}
 	
 	//Test for Get employee by id
