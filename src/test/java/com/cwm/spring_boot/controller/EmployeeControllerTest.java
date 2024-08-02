@@ -42,7 +42,7 @@ class EmployeeControllerTest {
 	@Autowired
 	private ObjectMapper objectMapper;
 
-	private Employee employee1, employee2;
+	private Employee employee1;
 	private List<Employee> employees = new ArrayList<Employee>();
 
 	@BeforeEach
@@ -50,11 +50,8 @@ class EmployeeControllerTest {
 
 		employee1 = Employee.builder().id(1L).firstName("Mayur").lastName("Bhosale").designation("Software Developer")
 				.email("mayur@test.com").build();
-		employee2 = Employee.builder().id(2L).firstName("Akash").lastName("Jadhav").designation("Devops Engineer")
-				.email("akash@test.com").build();
 
 		employees.add(employee1);
-		employees.add(employee2);
 
 	}
 
