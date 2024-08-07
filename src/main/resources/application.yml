@@ -1,6 +1,6 @@
 
 server:
-  port: 8080
+  port: 9090
 
 spring.jpa:
   database: POSTGRESQL
@@ -16,8 +16,4 @@ spring.datasource:
 spring:
   application:
     name: Employee-Service
-
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true    
+  
